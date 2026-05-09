@@ -1,8 +1,9 @@
 import React from 'react'
+import Mc from "./components/Mc";
 
 const App = () => {
   return (
-    <h1 className="text-4xl text-center text-black">Movie Recommendation App 🎬</h1>
+    <div className="min-h-screen bg-slate-900 flex justify-center items-center"><Mc/></div>
   )
 }
 
