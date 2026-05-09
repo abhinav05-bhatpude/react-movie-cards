@@ -9,9 +9,15 @@ const App = () => {
       </h1>
 
       <div className="flex-gap-6">
-        <Mc/>
-        <Mc/>
-        <Mc/>
+        <div className="bg-slate-800 p-4 rounded-xl w-64 hover:scale-105 transition duration-300">
+          <Mc/>
+        </div>
+         <div className="bg-slate-800 p-4 rounded-xl w-64 hover:scale-105 transition duration-300">
+          <Mc/>
+        </div>
+         <div className="bg-slate-800 p-4 rounded-xl w-64 hover:scale-105 transition duration-300">
+          <Mc/>
+        </div>
       </div>
 
     </div>
