@@ -14,6 +14,7 @@ const App = () => {
           title="Interstellar"
           rating="8.7"
           image="https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg"
+          genre="sci-fi"
           />
         </div>
          <div className="bg-slate-800 p-4 rounded-xl w-64 hover:scale-105 transition duration-300">
@@ -21,6 +22,7 @@ const App = () => {
           title="Inception"
           rating="8.8"
           image="https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg"
+          genre="sci-fi"
           />
         </div>
          <div className="bg-slate-800 p-4 rounded-xl w-64 hover:scale-105 transition duration-300">
