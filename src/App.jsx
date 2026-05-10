@@ -36,6 +36,10 @@ const App = () => {
         🎬 Movie Recommendations
       </h1>
 
+           <p className="text-slate-400 text-center mb-10 text-lg">
+        Explore some recommended movies built with React components ⚛️
+      </p>
+
       <div className="flex gap-6 flex-wrap justify-center">
 
         {movies.map((movie) => (
