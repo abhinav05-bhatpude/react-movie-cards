@@ -3,6 +3,7 @@ import Mc from "./components/Mc";
 import {useState} from "react";
 
 const App = () => {
+  const [search,setSearch]=useState("");
 
   const movies = [
     {
