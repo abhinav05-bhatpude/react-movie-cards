@@ -42,6 +42,16 @@ const App = () => {
         Explore some recommended movies built with React components ⚛️
       </p>
 
+      <div className="flex-justify-center mb-10">
+        <input
+        type="text"
+        placeholder="Search movies..."
+        className="px-4 py-3 rounded-lg w-80 bg-slate-800 text-white outlint-none"
+         />
+      </div>
+
+
+
       <div className="flex gap-6 flex-wrap justify-center">
 
         {movies.map((movie) => (
