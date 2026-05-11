@@ -47,6 +47,9 @@ const App = () => {
         type="text"
         placeholder="Search movies..."
         className="px-4 py-3 rounded-lg w-80 bg-slate-800 text-white outlint-none"
+
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
          />
       </div>
 
