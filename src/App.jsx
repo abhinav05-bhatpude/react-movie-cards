@@ -69,6 +69,11 @@ const App = () => {
         ))}
 
       </div>
+      {filteredMovies.length === 0 && (
+        <p className="text-center text-red-400 mt-10">
+          No movies found ❌
+        </p>
+      )}
 
     </div>
   );
