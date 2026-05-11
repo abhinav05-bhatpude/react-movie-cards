@@ -29,6 +29,85 @@ const App = () => {
       image:
         "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
     },
+    {
+  title: "Joker",
+  rating: "8.4",
+  genre: "Crime",
+  image:
+    "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+},
+
+{
+  title: "Avengers Endgame",
+  rating: "8.4",
+  genre: "Action",
+  image:
+    "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+},
+
+{
+  title: "The Dark Knight",
+  rating: "9.0",
+  genre: "Action",
+  image:
+    "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+},
+
+{
+  title: "Fight Club",
+  rating: "8.8",
+  genre: "Drama",
+  image:
+    "https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg",
+},
+
+{
+  title: "John Wick",
+  rating: "7.4",
+  genre: "Action",
+  image:
+    "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg",
+},
+
+{
+  title: "Oppenheimer",
+  rating: "8.5",
+  genre: "Biography",
+  image:
+    "https://image.tmdb.org/t/p/w500/ptpr0kGAckfQkJeJIt8st5dglvd.jpg",
+},
+
+{
+  title: "The Matrix",
+  rating: "8.7",
+  genre: "Sci-Fi",
+  image:
+    "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+},
+
+{
+  title: "Spider-Man",
+  rating: "8.2",
+  genre: "Superhero",
+  image:
+    "https://image.tmdb.org/t/p/w500/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg",
+},
+
+{
+  title: "Parasite",
+  rating: "8.5",
+  genre: "Thriller",
+  image:
+    "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+},
+
+{
+  title: "Whiplash",
+  rating: "8.5",
+  genre: "Drama",
+  image:
+    "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+},
   ];
 
   const filteredMovies = movies.filter((movie) =>
@@ -59,8 +138,9 @@ const App = () => {
 
       <div className="flex gap-6 flex-wrap justify-center">
 
-        {filteredMovies.map((movie) => (
+        {filteredMovies.map((movie,index) => (
           <Mc
+            key={index}
             title={movie.title}
             rating={movie.rating}
             genre={movie.genre}
