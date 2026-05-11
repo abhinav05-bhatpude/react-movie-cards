@@ -50,7 +50,7 @@ const App = () => {
         <input
           type="text"
           placeholder="Search movies..."
-          className="px-4 py-3 rounded-lg w-80 bg-slate-800 text-white outline-none"
+          className="px-4 py-3 rounded-lg w-80 bg-slate-800 text-white outline-none focus:ring-2 focus:ring-red-500"
 
           value={search}
           onChange={(e) => setSearch(e.target.value)}
