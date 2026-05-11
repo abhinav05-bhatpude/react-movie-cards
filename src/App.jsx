@@ -1,9 +1,9 @@
 import React from "react";
 import Mc from "./components/Mc";
-import {useState} from "react";
+import { useState } from "react";
 
 const App = () => {
-  const [search,setSearch]=useState("");
+  const [search, setSearch] = useState("");
 
   const movies = [
     {
@@ -31,6 +31,10 @@ const App = () => {
     },
   ];
 
+  const filteredMovies = movies.filter((movie) =>
+    movie.title.toLowerCase().includes(search.toLowerCase())
+  );
+
   return (
     <div className="min-h-screen bg-slate-900 p-10">
 
@@ -38,26 +42,24 @@ const App = () => {
         🎬 Movie Recommendations
       </h1>
 
-           <p className="text-slate-400 text-center mb-10 text-lg">
+      <p className="text-slate-400 text-center mb-10 text-lg">
         Explore some recommended movies built with React components ⚛️
       </p>
 
-      <div className="flex-justify-center mb-10">
+      <div className="flex justify-center mb-10">
         <input
-        type="text"
-        placeholder="Search movies..."
-        className="px-4 py-3 rounded-lg w-80 bg-slate-800 text-white outlint-none"
+          type="text"
+          placeholder="Search movies..."
+          className="px-4 py-3 rounded-lg w-80 bg-slate-800 text-white outline-none"
 
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-         />
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+        />
       </div>
-
-
 
       <div className="flex gap-6 flex-wrap justify-center">
 
-        {movies.map((movie) => (
+        {filteredMovies.map((movie) => (
           <Mc
             title={movie.title}
             rating={movie.rating}
