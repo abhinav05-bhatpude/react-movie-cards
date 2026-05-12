@@ -13,7 +13,7 @@ const Mc = (props) => {
 
        <p className="text-gray-400">⭐ {props.rating}</p> 
 
-       <p className="text-sm text-slat-400">{props.genre}</p>
+       <p className="text-sm text-slate-400">{props.genre}</p>
 
        <button className="bg-blue-500 px-4 py-2 rounded-lg mt-3 text-white p-4  w-64 hover:scale-105 transition">
         Watch Now</button>  
