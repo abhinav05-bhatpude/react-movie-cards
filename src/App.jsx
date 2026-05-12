@@ -112,7 +112,7 @@ const App = () => {
   return (
     <div className="min-h-screen bg-slate-900 p-10">
       <nav className="flex justify-between items-center mb-10">
-        <h1 className="text-3xl font-bold text-red-500">
+        <h1 className="text-3xl md:text-5xl font-bold text-red-500">
 MovieZone 🎬
         </h1>
         <button className="bg-red-500 px-4 py-2 rounded-lg text-white">
@@ -130,7 +130,7 @@ MovieZone 🎬
         <input
           type="text"
           placeholder="Search movies..."
-          className="px-4 py-3 rounded-lg w-80 bg-slate-800 text-white outline-none focus:ring-2 focus:ring-red-500"
+          className="px-4 py-3 rounded-lg w-full bg-slate-800 text-white outline-none focus:ring-2 focus:ring-red-500"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
