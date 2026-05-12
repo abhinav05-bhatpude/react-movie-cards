@@ -4,125 +4,113 @@ import { useState } from "react";
 
 const App = () => {
   const [search, setSearch] = useState("");
-  const [selectedGenre,setSelectedGenre]=useState("All");
+  const [selectedGenre, setSelectedGenre] = useState("All");
 
   const movies = [
     {
       title: "Interstellar",
       rating: "8.7",
       genre: "Sci-Fi",
-      image:
-        "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
+      image: "https://image.tmdb.org/t/p/w500/rAiYTfKGqDCRIIqo664sY9XZIvQ.jpg",
     },
 
     {
       title: "Inception",
       rating: "8.8",
       genre: "Action",
-      image:
-        "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
+      image: "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg",
     },
 
     {
       title: "Batman",
       rating: "8.4",
       genre: "Action",
-      image:
-        "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+      image: "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
     },
     {
-  title: "Joker",
-  rating: "8.4",
-  genre: "Crime",
-  image:
-    "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
-},
+      title: "Joker",
+      rating: "8.4",
+      genre: "Crime",
+      image: "https://image.tmdb.org/t/p/w500/udDclJoHjfjb8Ekgsd4FDteOkCU.jpg",
+    },
 
-{
-  title: "Avengers Endgame",
-  rating: "8.4",
-  genre: "Action",
-  image:
-    "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
-},
+    {
+      title: "Avengers Endgame",
+      rating: "8.4",
+      genre: "Action",
+      image: "https://image.tmdb.org/t/p/w500/or06FN3Dka5tukK1e9sl16pB3iy.jpg",
+    },
 
-{
-  title: "The Dark Knight",
-  rating: "9.0",
-  genre: "Action",
-  image:
-    "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
-},
+    {
+      title: "The Dark Knight",
+      rating: "9.0",
+      genre: "Action",
+      image: "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg",
+    },
 
-{
-  title: "Fight Club",
-  rating: "8.8",
-  genre: "Drama",
-  image:
-    "https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg",
-},
+    {
+      title: "Fight Club",
+      rating: "8.8",
+      genre: "Drama",
+      image: "https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg",
+    },
 
-{
-  title: "John Wick",
-  rating: "7.4",
-  genre: "Action",
-  image:
-    "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg",
-},
+    {
+      title: "John Wick",
+      rating: "7.4",
+      genre: "Action",
+      image: "https://image.tmdb.org/t/p/w500/fZPSd91yGE9fCcCe6OoQr6E3Bev.jpg",
+    },
 
-{
-  title: "Oppenheimer",
-  rating: "8.5",
-  genre: "Biography",
-  image:
-    "https://image.tmdb.org/t/p/w500/ptpr0kGAckfQkJeJIt8st5dglvd.jpg",
-},
+    {
+      title: "Oppenheimer",
+      rating: "8.5",
+      genre: "Biography",
+      image: "https://image.tmdb.org/t/p/w500/ptpr0kGAckfQkJeJIt8st5dglvd.jpg",
+    },
 
-{
-  title: "The Matrix",
-  rating: "8.7",
-  genre: "Sci-Fi",
-  image:
-    "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
-},
+    {
+      title: "The Matrix",
+      rating: "8.7",
+      genre: "Sci-Fi",
+      image: "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg",
+    },
 
-{
-  title: "Spider-Man",
-  rating: "8.2",
-  genre: "Superhero",
-  image:
-    "https://image.tmdb.org/t/p/w500/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg",
-},
+    {
+      title: "Spider-Man",
+      rating: "8.2",
+      genre: "Superhero",
+      image: "https://image.tmdb.org/t/p/w500/gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg",
+    },
 
-{
-  title: "Parasite",
-  rating: "8.5",
-  genre: "Thriller",
-  image:
-    "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
-},
+    {
+      title: "Parasite",
+      rating: "8.5",
+      genre: "Thriller",
+      image: "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+    },
 
-{
-  title: "Whiplash",
-  rating: "8.5",
-  genre: "Drama",
-  image:
-    "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
-},
+    {
+      title: "Whiplash",
+      rating: "8.5",
+      genre: "Drama",
+      image: "https://image.tmdb.org/t/p/w500/7fn624j5lj3xTme2SgiLCeuedmO.jpg",
+    },
   ];
 
-  const filteredMovies = movies.filter((movie) =>{
-    movie.title.toLowerCase().includes(search.toLowerCase());
+  const filteredMovies = movies.filter((movie) => {
+    const matchesSearch = movie.title
+      .toLowerCase()
+      .includes(search.toLowerCase());
 
-  const matchesGenre=
-  selectedGenre === "All" || movie.genre===selectedGenre;  
+    const matchesGenre =
+      selectedGenre === "All" || movie.genre === selectedGenre;
 
-  return matchesSearch && matchesGenre;
-});
+    return matchesSearch && matchesGenre;
+  });
 
   return (
     <div className="min-h-screen bg-slate-900 p-10">
-
       <h1 className="text-white text-5xl mb-10 text-center">
         🎬 Movie Recommendations
       </h1>
@@ -136,15 +124,39 @@ const App = () => {
           type="text"
           placeholder="Search movies..."
           className="px-4 py-3 rounded-lg w-80 bg-slate-800 text-white outline-none focus:ring-2 focus:ring-red-500"
-
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
+      <div className="flex justify-center gap-4 mb-10 flex-wrap">
+        <button
+          onClick={() => setSelectedGenre("All")}
+          className="bg-red-500 px-4 py-2 rounded-lg text-white"
+        >
+          All
+        </button>
+
+        <button
+        onClick={() => setSelectedGenre("Action")}
+        className="bg-slate-700 px-4 py-2 rounded-lg text-white"
+
+        >Action</button>
+
+         <button
+        onClick={() => setSelectedGenre("Sci-Fi")}
+        className="bg-slate-700 px-4 py-2 rounded-lg text-white"
+
+        >Sci-Fi</button>
+
+         <button
+        onClick={() => setSelectedGenre("Drama")}
+        className="bg-slate-700 px-4 py-2 rounded-lg text-white"
+
+        >Drama</button>
+      </div>
 
       <div className="flex gap-6 flex-wrap justify-center">
-
-        {filteredMovies.map((movie,index) => (
+        {filteredMovies.map((movie, index) => (
           <Mc
             key={index}
             title={movie.title}
@@ -153,16 +165,11 @@ const App = () => {
             image={movie.image}
           />
         ))}
-
       </div>
       {filteredMovies.length === 0 && (
-        <p className="text-center text-red-400 mt-10">
-          No movies found ❌
-        </p>
+        <p className="text-center text-red-400 mt-10">No movies found ❌</p>
       )}
-
     </div>
   );
 };
-
 export default App;
