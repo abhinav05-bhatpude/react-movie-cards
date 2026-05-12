@@ -4,6 +4,7 @@ import { useState } from "react";
 
 const App = () => {
   const [search, setSearch] = useState("");
+  const [selectedGenre,setSelectedGenre]=useState("All");
 
   const movies = [
     {
@@ -110,9 +111,14 @@ const App = () => {
 },
   ];
 
-  const filteredMovies = movies.filter((movie) =>
-    movie.title.toLowerCase().includes(search.toLowerCase())
-  );
+  const filteredMovies = movies.filter((movie) =>{
+    movie.title.toLowerCase().includes(search.toLowerCase());
+
+  const matchesGenre=
+  selectedGenre === "All" || movie.genre===selectedGenre;  
+
+  return matchesSearch && matchesGenre;
+});
 
   return (
     <div className="min-h-screen bg-slate-900 p-10">
