@@ -176,6 +176,10 @@ MovieZone 🎬
       {filteredMovies.length === 0 && (
         <p className="text-center text-red-400 mt-10">No movies found ❌</p>
       )}
+
+      <footer className="text-center text-slate-500 mt-20">
+         Built with React & Tailwind CSS 🚀
+      </footer>
     </div>
   );
 };
