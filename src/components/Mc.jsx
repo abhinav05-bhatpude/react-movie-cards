@@ -5,7 +5,7 @@ const Mc = (props) => {
     <div className="bg-slate-800 p-4 rounded-2xl w-64 hover:scale-105 hover:shadow-2xl transition duration-300">
         <img src={props.image}
         alt="movie"
-        className="rounded-lg"></img>
+        className="rounded-lg h-80 w-full object-cover"></img>
 
         <h2 className="text-white text-xl mt-3">
             {props.title}
