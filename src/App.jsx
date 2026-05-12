@@ -145,19 +145,19 @@ MovieZone 🎬
 
         <button
         onClick={() => setSelectedGenre("Action")}
-        className="bg-slate-700 px-4 py-2 rounded-lg text-white"
+        className="bg-slate-700 hover:bg-red-500 transition duration-300 px-4 py-2 rounded-lg text-white"
 
         >Action</button>
 
          <button
         onClick={() => setSelectedGenre("Sci-Fi")}
-        className="bg-slate-700 px-4 py-2 rounded-lg text-white"
+        className="bg-slate-700 hover:bg-red-500 transition duration-300 px-4 py-2 rounded-lg text-white"
 
         >Sci-Fi</button>
 
          <button
         onClick={() => setSelectedGenre("Drama")}
-        className="bg-slate-700 px-4 py-2 rounded-lg text-white"
+        className="bg-slate-700 hover:bg-red-500 transition duration-300 px-4 py-2 rounded-lg text-white"
 
         >Drama</button>
       </div>
