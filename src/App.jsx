@@ -111,6 +111,13 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-slate-900 p-10">
+      <nav className="flex justify-between items-center mb-10">
+        <h1 className="text-3xl font-bold text-red-500">
+MovieZone 🎬
+        </h1>
+        <button className="bg-red-500 px-4 py-2 rounded-lg text-white">
+          Login</button> 
+      </nav>
       <h1 className="text-white text-5xl mb-10 text-center">
         🎬 Movie Recommendations
       </h1>
