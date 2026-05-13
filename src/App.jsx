@@ -118,7 +118,7 @@ MovieZone 🎬
         <button className="bg-red-500 px-4 py-2 rounded-lg text-white">
           Login</button> 
       </nav>
-      <h1 className="text-white text-5xl mb-10 text-center">
+    <h1 className="text-white text-3xl sm:text-4xl md:text-5xl mb-6 text-center leading-tight">
         🎬 Movie Recommendations
       </h1>
 
