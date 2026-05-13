@@ -135,32 +135,28 @@ MovieZone 🎬
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
-      <div className="flex justify-center gap-4 mb-10 flex-wrap">
-        <button
-          onClick={() => setSelectedGenre("All")}
-          className="bg-red-500 px-4 py-2 rounded-lg text-white"
-        >
-          All
-        </button>
+  <div className="flex justify-center gap-4 mb-10 flex-wrap">
 
-        <button
-        onClick={() => setSelectedGenre("Action")}
-        className="bg-slate-700 hover:bg-red-500 transition duration-300 px-4 py-2 rounded-lg text-white"
+  {["All", "Action", "Sci-Fi", "Drama"].map((genre) => (
 
-        >Action</button>
+    <button
+      key={genre}
+      onClick={() => setSelectedGenre(genre)}
 
-         <button
-        onClick={() => setSelectedGenre("Sci-Fi")}
-        className="bg-slate-700 hover:bg-red-500 transition duration-300 px-4 py-2 rounded-lg text-white"
+      className={`px-4 py-2 rounded-lg text-white transition duration-300
+      ${
+        selectedGenre === genre
+          ? "bg-red-500 scale-105"
+          : "bg-slate-700 hover:bg-red-500"
+      }`}
+    >
+      {genre}
 
-        >Sci-Fi</button>
+    </button>
 
-         <button
-        onClick={() => setSelectedGenre("Drama")}
-        className="bg-slate-700 hover:bg-red-500 transition duration-300 px-4 py-2 rounded-lg text-white"
+  ))}
 
-        >Drama</button>
-      </div>
+</div>
 
       <div className="flex gap-6 flex-wrap justify-center">
         {filteredMovies.map((movie, index) => (
