@@ -111,7 +111,7 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-slate-900 p-10">
-      <nav className="flex justify-between items-center mb-10">
+     <nav className="flex flex-col sm:flex-row justify-between items-center gap-4 mb-10">
         <h1 className="text-3xl md:text-5xl font-bold text-red-500">
 MovieZone 🎬
         </h1>
