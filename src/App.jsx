@@ -130,7 +130,7 @@ MovieZone 🎬
         <input
           type="text"
           placeholder="Search movies..."
-          className="px-4 py-3 rounded-lg w-full bg-slate-800 text-white outline-none focus:ring-2 focus:ring-red-500"
+          className="px-4 py-3 rounded-lg w-full sm:w-[400px] bg-slate-800 text-white outline-none focus:ring-2 focus:ring-red-500"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
