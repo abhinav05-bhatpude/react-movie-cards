@@ -23,3 +23,15 @@ Users can:
 - Responsive design
 - Hover animations
 - Modern UI
+
+## ⚙️ Installation
+
+```bash
+git clone https://github.com/abhinav05-bhatpude/react-movie-cards.git
+
+cd react-movie-cards
+
+npm install
+
+npm run dev
+```
