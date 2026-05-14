@@ -45,3 +45,8 @@ npm run dev
 - Filtering data
 - Responsive UI design
 - Tailwind CSS basics
+
+
+## 🌐 Live Demo
+
+[View Live Project](https://react-movie-cards-silk.vercel.app)
