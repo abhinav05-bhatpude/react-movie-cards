@@ -24,6 +24,13 @@ Users can:
 - Hover animations
 - Modern UI
 
+## 📱 Responsive Design
+
+This project is optimized for:
+- Mobile devices
+- Tablets
+- Desktop screens
+
 ## ⚙️ Installation
 
 ```bash
