@@ -7,3 +7,10 @@ Users can:
 - Filter by genre
 - Explore movie cards
 - Enjoy responsive UI design
+
+## 🚀 Tech Stack
+
+- React.js
+- Tailwind CSS
+- JavaScript
+- Vite
