@@ -14,3 +14,12 @@ Users can:
 - Tailwind CSS
 - JavaScript
 - Vite
+
+## ✨ Features
+
+- Dynamic movie cards
+- Genre filtering
+- Search functionality
+- Responsive design
+- Hover animations
+- Modern UI
