@@ -50,3 +50,7 @@ npm run dev
 ## 🌐 Live Demo
 
 [View Live Project](https://react-movie-cards-silk.vercel.app)
+
+---
+
+Built with ❤️ using React & Tailwind CSS
