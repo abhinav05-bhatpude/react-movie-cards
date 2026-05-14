@@ -35,3 +35,13 @@ npm install
 
 npm run dev
 ```
+
+## 🧠 What I Learned
+
+- React components
+- Props
+- useState hook
+- Dynamic rendering
+- Filtering data
+- Responsive UI design
+- Tailwind CSS basics
